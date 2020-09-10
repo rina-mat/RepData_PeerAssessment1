@@ -165,7 +165,7 @@ activityData$datetype <- sapply(activityData$date, function(x) {
   {y <- "Weekend"} else 
   {y <- "Weekday"}
   y
-})
+}) 
 ```
 
 A panel plot containing a time series plot of the 5-minute interval (x-axis) and the average number of steps taken, averaged across all weekday days or weekend days (y-axis): 
@@ -180,3 +180,12 @@ print(plot)
 ```
 
 ![](PA1_template_files/figure-html/unnamed-chunk-15-1.png)<!-- -->
+
+knit2html(".Rmd")
+if (interactive()) browseURL("test.html")
+
+unlink(c("test.Rmd", "test.html", "test.md"))
+
+
+
+
