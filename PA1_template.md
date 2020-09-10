@@ -49,7 +49,7 @@ mean(totalSteps$`Total Steps`)
 
 
 ```r
-median(totalSteps$`Total Steps`) 
+median(totalSteps$`Total Steps`)  
 ```
 
 ```
@@ -181,10 +181,7 @@ print(plot)
 
 ![](PA1_template_files/figure-html/unnamed-chunk-15-1.png)<!-- -->
 
-knit2html(".Rmd")
-if (interactive()) browseURL("test.html")
 
-unlink(c("test.Rmd", "test.html", "test.md"))
 
 
 

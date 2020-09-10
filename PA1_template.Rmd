@@ -39,7 +39,7 @@ mean(totalSteps$`Total Steps`)
 +  And The median of total number of steps taken per day is -
 
 ```{r}
-median(totalSteps$`Total Steps`) 
+median(totalSteps$`Total Steps`)  
 ```
 ## What is the average daily activity pattern?
 +  A time series plot (i.e. type = "l") of the 5-minute interval (x-axis) and the average number of steps taken, averaged across all days (y-axis) is drawn to display the average daily activity pattern.
@@ -117,10 +117,7 @@ print(plot)
 
 ```
 
-knit2html(".Rmd")
-if (interactive()) browseURL("test.html")
 
-unlink(c("test.Rmd", "test.html", "test.md"))
 
 
 
